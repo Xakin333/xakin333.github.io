@@ -176,8 +176,16 @@
     </style>
 </head>
 <body>
-<p>Test</p>
+<p id="count">0</p>
 <button id="click">Клик</button>
+<script>
+    let tg = window.Telegram.WebApp;
+    let click = document.getElementById("click")
+
+    click.addEventListener("click", () => {
+        document.getElementById("count").value += 1;
+    }
+</script>
 </body>
 </html>
 <!-- page generated in 1.11ms -->
